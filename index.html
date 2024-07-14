@@ -1,97 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carina Gruber - Curriculum Vitae</title>
     <!-- Include Tailwind CSS -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Custom CSS for some additional styling -->
+    <style>
+        /* Example of custom styles */
+        .nav-link {
+            transition: all 0.3s ease;
+            padding: 8px 16px;
+            border-radius: 999px;
+        }
+
+        .nav-link:hover {
+            transform: scale(1.1);
+            color: #4C51BF;
+            background-color: #E5E7EB;
+        }
+    </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
 
-    <div class="container mx-auto px-4 py-8">
-
-        <!-- Header -->
-        <header class="text-center">
-            <h1 class="text-4xl font-bold mb-4">Carina Gruber</h1>
-            <p class="text-lg text-gray-600">Curriculum Vitae</p>
-        </header>
-
-        <!-- Main Content -->
-        <section class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-
-            <!-- Personal Information -->
-            <div class="bg-white p-4 rounded-xl shadow-xl">
-                <h2 class="text-2xl font-bold mb-2">Persönliche Daten</h2>
-                <p><strong>Geboren am:</strong> 06.06.1999</p>
-            </div>
-
-            <!-- Education -->
-            <div class="bg-white p-4 rounded-xl shadow-xl">
-                <h2 class="text-2xl font-bold mb-2">Ausbildung</h2>
-                <div>
-                    <h3 class="text-xl font-bold">Oktober 2020 – Dezember 2022</h3>
-                    <p>Universität Augsburg</p>
-                    <p>Masterstudium Wirtschaftsingenieurwesen</p>
-                    <p>Schwerpunkt: Materials Engineering</p>
-                    <p>Abschluss: Master of Science (1,1)</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold">Oktober 2017 – Oktober 2020
-</h3>
-                    <p>Universität Augsburg</p>
-                    <p>Bachelorstudium Wirtschaftsingenieurwesen</p>
-                    <p>Schwerpunkt: Naturwissenschaftlich-Technisch</p>
-                    <p>Abschluss: Allgemeine Hochschulreife (1,7)
-</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-bold">Oktober 2009 – Juli 2017</h3>
-                    <p>Simpert-Kraemer-Gymnasium Krumbach
-</p>
-                    <p>Masterstudium Wirtschaftsingenieurwesen</p>
-                    <p>Schwerpunkt: Materials Engineering</p>
-                    <p>Abschluss: Master of Science (1,1)</p>
-                </div>
-                <!-- Add more education sections as needed -->
-            </div>
-
-            <!-- Experience -->
-            <div class="bg-white p-4 rounded-xl shadow-xl">
-                <h2 class="text-2xl font-bold mb-2">Experience</h2>
-                <div>
-                    <h3 class="text-xl font-bold">Job Title</h3>
-                    <p>Company Name, Year - Year</p>
-                    <p>Details about your responsibilities and achievements</p>
-                </div>
-                <!-- Add more experience sections as needed -->
-            </div>
-
-            <!-- Skills -->
-            <div class="bg-white p-4 rounded-xl shadow-xl">
-                <h2 class="text-2xl font-bold mb-2">Skills</h2>
-                <ul class="list-disc list-inside">
-                    <li>Skill 1</li>
-                    <li>Skill 2</li>
-                    <li>Skill 3</li>
-                    <!-- Add more skills -->
+<body class="bg-gray-100 text-gray-800">
+  <nav class="fixed top-0 z-50 w-full bg-white shadow-lg py-4 px-6">
+            <div class="container mx-auto flex justify-center md:justify-start">
+                <ul class="flex flspace-x-4">
+                    <li><a href="#personal-data" class="nav-link">Persönliche Daten</a></li>
+                    <li><a href="#education" class="nav-link">Ausbildung</a></li>
+                    <li><a href="#experience" class="nav-link">Berufserfahrung</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#additional-info" class="nav-link">Zusätzliche Informationen</a></li>
                 </ul>
             </div>
+        </nav>
+    <div class="container mx-auto px-4  py-8">
 
-            <!-- Additional Information -->
-            <div class="bg-white p-4 rounded-xl shadow-xl">
-                <h2 class="text-2xl font-bold mb-2">Additional Information</h2>
-                <p>Any additional relevant details about yourself</p>
-            </div>
+        <!-- Navbar -->
 
-        </section>
 
-        <!-- Footer -->
-        <footer class="text-center mt-8">
-            <p>&copy; 2020 Your Name. All rights reserved.</p>
-        </footer>
+            <header class="text-center mt-20 mb-8">
+                <h1 class="text-4xl font-bold">Carina Gruber</h1>
+                <p class="text-lg text-gray-600">Curriculum Vitae</p>
+            </header>
+        <!-- Main Content -->
+        <div class="mt-10 grid grid-cols-1 md:grid-cols-2 gap-4">
 
+
+            <!-- Personal Data Section -->
+            <section id="personal-data" class="bg-blue-100 border-blue-200 border-l-4 rounded-lg shadow-xl p-6">
+                    <h2 class="text-2xl font-bold mb-4">Persönliche Daten</h2>
+                    <p><strong>Geboren am:</strong> 06.06.1999</p>
+            </section>
+
+            <!-- Education Section -->
+            <section id="education" class="bg-green-100 border-green-200 border-l-4 rounded-lg shadow-xl p-6">
+                    <h2 class="text-2xl font-bold mb-4">Ausbildung</h2>
+                    <div>
+                        <h3 class="text-xl font-bold">Oktober 2020 – Dezember 2022</h3>
+                        <p>Universität Augsburg</p>
+                        <p>Masterstudium Wirtschaftsingenieurwesen</p>
+                        <p>Schwerpunkt: Materials Engineering</p>
+                        <p>Abschluss: Master of Science (1,1)</p>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold">Oktober 2017 – Oktober 2020</h3>
+                        <p>Universität Augsburg</p>
+                        <p>Bachelorstudium Wirtschaftsingenieurwesen</p>
+                        <p>Schwerpunkt: Naturwissenschaftlich-Technisch</p>
+                        <p>Abschluss: Allgemeine Hochschulreife (1,7)</p>
+                    </div>
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold">Oktober 2009 – Juli 2017</h3>
+                        <p>Simpert-Kraemer-Gymnasium Krumbach</p>
+                        <p>Allgemeine Hochschulreife</p>
+                    </div>
+            </section>
+
+            <!-- Experience Section -->
+            <section id="experience" >
+                <div class="bg-yellow-100 border-yellow-200 border-l-4 rounded-lg shadow-xl p-6">
+                    <h2 class="text-2xl font-bold mb-4">Berufserfahrung</h2>
+                    <div>
+                        <h3 class="text-xl font-bold">Job Title</h3>
+                        <p>Company Name, Year - Year</p>
+                        <p>Details about your responsibilities and achievements</p>
+                    </div>
+                    <!-- Add more experience sections as needed -->
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section id="skills"  class="bg-purple-100 border-purple-200 border-l-4 rounded-lg shadow-xl p-6">
+                    <h2 class="text-2xl font-bold mb-4">Skills</h2>
+                    <ul class="list-disc list-inside">
+                        <li>Skill 1</li>
+                        <li>Skill 2</li>
+                        <li>Skill 3</li>
+                        <!-- Add more skills -->
+                    </ul>
+            </section>
+
+            <!-- Additional Information Section -->
+            <section id="additional-info"  class="bg-pink-100 border-pink-200 border-l-4 rounded-lg shadow-xl p-6">
+                    <h2 class="text-2xl font-bold mb-4">Zusätzliche Informationen</h2>
+                    <p>Any additional relevant details about yourself</p>
+            </section>
+
+
+        </div>
+    <!-- Footer -->
+            <footer class="text-center mt-8">
+                <p>&copy; 2024 Carina Gruber. Alle Rechte vorbehalten.</p>
+            </footer>
     </div>
 
+    <!-- Smooth Scroll Script -->
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+
 </body>
+
 </html>
+
+
